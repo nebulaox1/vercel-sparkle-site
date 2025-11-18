@@ -1,9 +1,9 @@
 import { useState, useMemo } from "react";
 import { Button } from "@/components/ui/button";
-import { ToolCard } from "@/components/ToolCard";
+import { ProjectCard } from "@/components/ToolCard";
 import { SearchBar } from "@/components/SearchBar";
 import { CategoryFilter } from "@/components/CategoryFilter";
-import { tools } from "@/data/tools";
+import { projects } from "@/data/tools";
 import { ArrowLeft, MessageSquare, Plus } from "lucide-react";
 
 const Index = () => {
@@ -11,14 +11,14 @@ const Index = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const categories = useMemo(() => {
-    return Array.from(new Set(tools.map(tool => tool.category)));
+    return Array.from(new Set(projects.map(project => project.category)));
   }, []);
 
-  const filteredTools = useMemo(() => {
-    return tools.filter(tool => {
-      const matchesSearch = tool.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          tool.description.toLowerCase().includes(searchQuery.toLowerCase());
-      const matchesCategory = selectedCategory === "All" || tool.category === selectedCategory;
+  const filteredProjects = useMemo(() => {
+    return projects.filter(project => {
+      const matchesSearch = project.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                          project.description.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchesCategory = selectedCategory === "All" || project.category === selectedCategory;
       return matchesSearch && matchesCategory;
     });
   }, [searchQuery, selectedCategory]);
@@ -35,11 +35,11 @@ const Index = () => {
           <div className="flex gap-2">
             <Button variant="default" className="gap-2">
               <Plus className="h-4 w-4" />
-              Suggest a Tool
+              Submit Your Project
             </Button>
             <Button variant="outline" className="gap-2">
               <MessageSquare className="h-4 w-4" />
-              Write feedback
+              Community Feedback
             </Button>
           </div>
         </div>
@@ -48,10 +48,10 @@ const Index = () => {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 text-center">
         <h1 className="text-5xl md:text-6xl font-bold text-primary mb-4">
-          Web3 Toolkit
+          Arc Community Hub
         </h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
-          Curated collection of investigative tools, AI creator tools, web3 trackers, crypto gateways, utility apps, and hidden gems
+          Discover and explore all the amazing projects being built on Arc. From DeFi protocols to NFT marketplaces, gaming, and infrastructure.
         </p>
 
         {/* Search Bar */}
@@ -68,39 +68,39 @@ const Index = () => {
           />
         </div>
 
-        {/* Additional Category Row */}
+        {/* Additional Info */}
         <div className="flex justify-center">
-          <Button variant="secondary" className="rounded-full">
-            Web & Discord Tools
-          </Button>
+          <p className="text-sm text-muted-foreground">
+            Join the Arc ecosystem and build the future of decentralized applications
+          </p>
         </div>
       </section>
 
-      {/* Tools Grid */}
+      {/* Projects Grid */}
       <section className="container mx-auto px-4 pb-16">
         <div className="text-center mb-8">
           <p className="text-muted-foreground">
-            Showing <span className="font-semibold text-foreground">{filteredTools.length}</span> tools
+            Showing <span className="font-semibold text-foreground">{filteredProjects.length}</span> projects
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredTools.map((tool) => (
-            <ToolCard
-              key={tool.id}
-              name={tool.name}
-              description={tool.description}
-              category={tool.category}
-              imageUrl={tool.imageUrl}
-              link={tool.link}
+          {filteredProjects.map((project) => (
+            <ProjectCard
+              key={project.id}
+              name={project.name}
+              description={project.description}
+              category={project.category}
+              imageUrl={project.imageUrl}
+              link={project.link}
             />
           ))}
         </div>
 
-        {filteredTools.length === 0 && (
+        {filteredProjects.length === 0 && (
           <div className="text-center py-16">
             <p className="text-muted-foreground text-lg">
-              No tools found matching your search criteria
+              No projects found matching your search criteria
             </p>
           </div>
         )}
