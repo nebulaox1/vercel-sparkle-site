@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-interface ToolCardProps {
+interface ProjectCardProps {
   name: string;
   description: string;
   category: string;
@@ -11,18 +11,17 @@ interface ToolCardProps {
 
 const getCategoryColor = (category: string) => {
   const colors: Record<string, string> = {
-    "OSINT & Investigation": "bg-category-osint",
-    "Content & Productivity": "bg-category-content",
-    "Tracking & Analytics": "bg-category-tracking",
-    "Payment": "bg-category-payment",
-    "Utility": "bg-category-utility",
-    "Development Tools": "bg-category-development",
-    "Cloud & Infrastructure": "bg-category-cloud",
+    "DeFi": "bg-category-defi",
+    "NFT & Gaming": "bg-category-nft",
+    "Infrastructure": "bg-category-infrastructure",
+    "Wallet & Tools": "bg-category-wallet",
+    "Governance": "bg-category-governance",
+    "Social": "bg-category-social",
   };
   return colors[category] || "bg-muted";
 };
 
-export const ToolCard = ({ name, description, category, imageUrl, link }: ToolCardProps) => {
+export const ProjectCard = ({ name, description, category, imageUrl, link }: ProjectCardProps) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer" className="block group">
       <Card className="overflow-hidden border-border bg-card hover:border-primary/50 transition-all duration-300 h-full flex flex-col">
