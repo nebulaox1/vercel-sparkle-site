@@ -39,12 +39,11 @@ All colors MUST be HSL.
     --radius: 0.75rem;
 
     /* Category colors */
-    --category-defi: 280 100% 70%;
-    --category-nft: 340 100% 70%;
-    --category-infrastructure: 200 100% 70%;
-    --category-wallet: 150 100% 70%;
-    --category-governance: 30 100% 70%;
-    --category-social: 260 100% 70%;
+    --category-dapps: 147 51% 47%;
+    --category-nfts: 280 65% 60%;
+    --category-gaming: 339 82% 52%;
+    --category-voice: 217 91% 60%;
+    --category-utility: 24 95% 53%;
   }
 }
 
