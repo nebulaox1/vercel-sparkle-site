@@ -11,12 +11,11 @@ interface ProjectCardProps {
 
 const getCategoryColor = (category: string) => {
   const colors: Record<string, string> = {
-    "DeFi": "bg-category-defi",
-    "NFT & Gaming": "bg-category-nft",
-    "Infrastructure": "bg-category-infrastructure",
-    "Wallet & Tools": "bg-category-wallet",
-    "Governance": "bg-category-governance",
-    "Social": "bg-category-social",
+    "Dapps": "bg-category-dapps",
+    "NFTs": "bg-category-nfts",
+    "Gaming": "bg-category-gaming",
+    "Voice Apps": "bg-category-voice",
+    "Utility": "bg-category-utility",
   };
   return colors[category] || "bg-muted";
 };

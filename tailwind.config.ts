@@ -48,12 +48,11 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         category: {
-          defi: "hsl(var(--category-defi))",
-          nft: "hsl(var(--category-nft))",
-          infrastructure: "hsl(var(--category-infrastructure))",
-          wallet: "hsl(var(--category-wallet))",
-          governance: "hsl(var(--category-governance))",
-          social: "hsl(var(--category-social))",
+          dapps: "hsl(var(--category-dapps))",
+          nfts: "hsl(var(--category-nfts))",
+          gaming: "hsl(var(--category-gaming))",
+          voice: "hsl(var(--category-voice))",
+          utility: "hsl(var(--category-utility))",
         },
       },
       borderRadius: {
