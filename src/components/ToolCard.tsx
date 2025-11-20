@@ -7,6 +7,7 @@ interface ProjectCardProps {
   category: string;
   imageUrl: string;
   link: string;
+  twitter?: string;
 }
 
 const getCategoryColor = (category: string) => {
@@ -20,10 +21,10 @@ const getCategoryColor = (category: string) => {
   return colors[category] || "bg-muted";
 };
 
-export const ProjectCard = ({ name, description, category, imageUrl, link }: ProjectCardProps) => {
+export const ProjectCard = ({ name, description, category, imageUrl, link, twitter }: ProjectCardProps) => {
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer" className="block group">
-      <Card className="overflow-hidden border-border bg-card hover:border-primary/50 transition-all duration-300 h-full flex flex-col">
+    <Card className="overflow-hidden border-border bg-card hover:border-primary/50 transition-all duration-300 h-full flex flex-col">
+      <a href={link} target="_blank" rel="noopener noreferrer" className="block group">
         <div className="aspect-video bg-secondary/50 flex items-center justify-center p-8 relative overflow-hidden">
           <img 
             src={imageUrl} 
@@ -38,11 +39,26 @@ export const ProjectCard = ({ name, description, category, imageUrl, link }: Pro
           <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
             {name}
           </h3>
-          <p className="text-sm text-muted-foreground line-clamp-2">
+          <p className="text-sm text-muted-foreground line-clamp-3">
             {description}
           </p>
         </div>
-      </Card>
-    </a>
+      </a>
+      {twitter && (
+        <div className="px-5 pb-5">
+          <a 
+            href={`https://twitter.com/${twitter}`} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+          >
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            @{twitter}
+          </a>
+        </div>
+      )}
+    </Card>
   );
 };
