@@ -21,7 +21,7 @@ export const projects: Project[] = [
   {
     id: "rearc",
     name: "Rearc AMM",
-    description: "A DeFi project submitted to the Lablab AI NYC Hackathon. In this dApp, you can swap tokens, add liquidity, and there is an AI agent.",
+    description: "DeFi platform featuring token swaps, liquidity pools, and an integrated AI assistant. Built for the Lablab AI NYC Hackathon.",
     category: "Dapps",
     imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
     link: "https://rearc.xyz/",
@@ -30,7 +30,7 @@ export const projects: Project[] = [
   {
     id: "defi-on-arc",
     name: "DeFi on Arc",
-    description: "A dApp on Arc Testnet where you can swap tokens, add Liquidity, and bridge from Sepolia.",
+    description: "Comprehensive DeFi solution offering token swapping, liquidity provision, and cross-chain bridging from Sepolia.",
     category: "Dapps",
     imageUrl: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=400&h=300&fit=crop",
     link: "https://defi-on-arc.netlify.app/",
@@ -39,7 +39,7 @@ export const projects: Project[] = [
   {
     id: "arcdex",
     name: "ArcDex",
-    description: "A DEX and Bridge application on Arc. This dApp offers cross-chain bridging via Circle CCTP, batch payments, and one-click payment links for liquidity.",
+    description: "Decentralized exchange with Circle CCTP cross-chain bridging, batch payment processing, and instant payment link generation.",
     category: "Dapps",
     imageUrl: "https://images.unsplash.com/photo-1639762681057-408e52192e55?w=400&h=300&fit=crop",
     link: "https://arcdex.netlify.app/",
@@ -48,7 +48,7 @@ export const projects: Project[] = [
   {
     id: "arcbond",
     name: "ArcBond",
-    description: "An on-chain Bond protocol, DEX and Bridge on Arc Testnet. It uses CCTP for cross-chain USDC, offering fixed-rate DeFi instruments and a verifiable treasury.",
+    description: "On-chain bonding protocol combining DEX and bridge functionality. Features CCTP-powered cross-chain USDC transfers, fixed-rate instruments, and transparent treasury.",
     category: "Dapps",
     imageUrl: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop",
     link: "https://arcbond.vercel.app/",
@@ -57,7 +57,7 @@ export const projects: Project[] = [
   {
     id: "bagless",
     name: "Bagless",
-    description: "A platform for token creation and trading them together in the same place.",
+    description: "All-in-one platform for launching new tokens and trading them in a unified marketplace.",
     category: "Dapps",
     imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop",
     link: "https://bagless.cc/",
@@ -67,7 +67,7 @@ export const projects: Project[] = [
   {
     id: "arcnft",
     name: "Arc NFT Marketplace",
-    description: "An NFT marketplace on the Arc Testnet with many features like watchlist, make offers for NFTs, etc.",
+    description: "Full-featured NFT marketplace with watchlist functionality, offer making, and comprehensive trading tools.",
     category: "NFTs",
     imageUrl: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop",
     link: "https://arcnft.lovable.app/",
@@ -77,7 +77,7 @@ export const projects: Project[] = [
   {
     id: "arcclot",
     name: "ArcClot",
-    description: "An on-chain slot machine. This is providing fast USDC gaming on Arc.",
+    description: "On-chain slot machine delivering instant USDC-based gaming experiences.",
     category: "Gaming",
     imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop",
     link: "https://arcclot.vercel.app/",
@@ -87,7 +87,7 @@ export const projects: Project[] = [
   {
     id: "ai-voice-vault",
     name: "AI Voice Vault",
-    description: "An AI-powered voice-autonomous DeFi platform on the Arc network that uses natural voice commands. Submitted to Lablab AI Hackathon.",
+    description: "Voice-controlled DeFi platform leveraging AI for hands-free transactions through natural speech commands. Lablab AI Hackathon submission.",
     category: "Voice Apps",
     imageUrl: "https://images.unsplash.com/photo-1589254065878-42c9da997008?w=400&h=300&fit=crop",
     link: "https://ai-voice-vault.vercel.app/",
@@ -96,7 +96,7 @@ export const projects: Project[] = [
   {
     id: "floe",
     name: "Floe",
-    description: "Uses AI agents for voice-controlled, autonomous payments and seamless cross-chain USDC transfers via CCTP.",
+    description: "AI-driven voice payment system enabling autonomous transactions and frictionless cross-chain USDC movement through CCTP.",
     category: "Voice Apps",
     imageUrl: "https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=400&h=300&fit=crop",
     link: "https://floe.onrender.com/",
@@ -105,7 +105,7 @@ export const projects: Project[] = [
   {
     id: "arcclient-voice",
     name: "ArcClient Voice",
-    description: "A voice-controlled micropayments system on Arc Testnet.",
+    description: "Voice-activated micropayment solution built for seamless small-value transactions.",
     category: "Voice Apps",
     imageUrl: "https://images.unsplash.com/photo-1616509091215-57bbece93654?w=400&h=300&fit=crop",
     link: "https://arcclient.vercel.app/auth",
@@ -115,7 +115,7 @@ export const projects: Project[] = [
   {
     id: "arc-id",
     name: "ArcID",
-    description: "An on-chain identity passport, verified via Worldcoin and secured by Storacha.",
+    description: "Decentralized identity passport with Worldcoin verification and Storacha security.",
     category: "Utility",
     imageUrl: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=300&fit=crop",
     link: "https://arc-id.vercel.app/",
@@ -124,7 +124,7 @@ export const projects: Project[] = [
   {
     id: "arc-payroll",
     name: "Arc Payroll Platform",
-    description: "An Everything App for Arc Testnet. There are many options, such as token swaps, contract deployments, adding liquidity, etc.",
+    description: "All-in-one Arc toolkit featuring token swaps, smart contract deployment, liquidity management, and more.",
     category: "Utility",
     imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&h=300&fit=crop",
     link: "https://arc-payroll-platform.vercel.app/",
@@ -133,7 +133,7 @@ export const projects: Project[] = [
   {
     id: "payarc",
     name: "PayArc",
-    description: "An on-chain Invoice Payment System on Arc Testnet. It allows users to create and pay invoices transparently.",
+    description: "Transparent on-chain invoicing system for creating and processing payments with full blockchain visibility.",
     category: "Utility",
     imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop",
     link: "https://payarc.vercel.app/",
