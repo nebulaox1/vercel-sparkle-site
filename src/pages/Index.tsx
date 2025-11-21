@@ -106,6 +106,23 @@ const Index = () => {
           </div>
         )}
       </section>
+
+      {/* Footer */}
+      <footer className="border-t border-border mt-auto">
+        <div className="container mx-auto px-4 py-8 text-center">
+          <p className="text-sm text-muted-foreground">
+            Built by{" "}
+            <a
+              href="https://twitter.com/emak47_"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline transition-colors"
+            >
+              @emak47_
+            </a>
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };
