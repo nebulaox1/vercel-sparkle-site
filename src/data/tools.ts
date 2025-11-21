@@ -1,3 +1,18 @@
+import arcPrivyImg from "@/assets/arc-privy.jpg";
+import rearcAmmImg from "@/assets/rearc-amm.jpg";
+import defiOnArcImg from "@/assets/defi-on-arc.jpg";
+import arcdexImg from "@/assets/arcdex.jpg";
+import arcbondImg from "@/assets/arcbond.jpg";
+import baglessImg from "@/assets/bagless.jpg";
+import arcnftImg from "@/assets/arcnft.jpg";
+import arcclotImg from "@/assets/arcclot.jpg";
+import aiVoiceVaultImg from "@/assets/ai-voice-vault.jpg";
+import floeImg from "@/assets/floe.jpg";
+import arcclientVoiceImg from "@/assets/arcclient-voice.jpg";
+import arcIdImg from "@/assets/arc-id.jpg";
+import arcPayrollImg from "@/assets/arc-payroll.jpg";
+import payarcImg from "@/assets/payarc.jpg";
+
 export interface Project {
   id: string;
   name: string;
@@ -15,7 +30,7 @@ export const projects: Project[] = [
     name: "Arc Privy",
     description: "Simple backend authentication solution for Arc ecosystem applications",
     category: "Dapps",
-    imageUrl: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=300&fit=crop",
+    imageUrl: arcPrivyImg,
     link: "https://arc-privy-simple-backend.vercel.app/",
     twitter: "yoshinokuna"
   },
@@ -24,7 +39,7 @@ export const projects: Project[] = [
     name: "Rearc AMM",
     description: "DeFi platform featuring token swaps, liquidity pools, and an integrated AI assistant. Built for the Lablab AI NYC Hackathon.",
     category: "Dapps",
-    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
+    imageUrl: rearcAmmImg,
     link: "https://rearc.xyz/",
     twitter: "bastiankoh"
   },
@@ -33,7 +48,7 @@ export const projects: Project[] = [
     name: "DeFi on Arc",
     description: "Comprehensive DeFi solution offering token swapping, liquidity provision, and cross-chain bridging from Sepolia.",
     category: "Dapps",
-    imageUrl: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=400&h=300&fit=crop",
+    imageUrl: defiOnArcImg,
     link: "https://defi-on-arc.netlify.app/",
     twitter: "realchriswilder"
   },
@@ -42,7 +57,7 @@ export const projects: Project[] = [
     name: "ArcDex",
     description: "Decentralized exchange with Circle CCTP cross-chain bridging, batch payment processing, and instant payment link generation.",
     category: "Dapps",
-    imageUrl: "https://images.unsplash.com/photo-1639762681057-408e52192e55?w=400&h=300&fit=crop",
+    imageUrl: arcdexImg,
     link: "https://arcdex.netlify.app/",
     twitter: "yoshinokuna"
   },
@@ -51,7 +66,7 @@ export const projects: Project[] = [
     name: "ArcBond",
     description: "On-chain bonding protocol combining DEX and bridge functionality. Features CCTP-powered cross-chain USDC transfers, fixed-rate instruments, and transparent treasury.",
     category: "Dapps",
-    imageUrl: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop",
+    imageUrl: arcbondImg,
     link: "https://arcbond.vercel.app/",
     twitter: "buiminhtoan1985"
   },
@@ -60,7 +75,7 @@ export const projects: Project[] = [
     name: "Bagless",
     description: "All-in-one platform for launching new tokens and trading them in a unified marketplace.",
     category: "Dapps",
-    imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop",
+    imageUrl: baglessImg,
     link: "https://bagless.cc/",
     twitter: "baglessapp"
   },
@@ -70,7 +85,7 @@ export const projects: Project[] = [
     name: "Arc NFT Marketplace",
     description: "Full-featured NFT marketplace with watchlist functionality, offer making, and comprehensive trading tools.",
     category: "NFTs",
-    imageUrl: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop",
+    imageUrl: arcnftImg,
     link: "https://arcnft.lovable.app/",
     twitter: "jojo62562095"
   },
@@ -80,7 +95,7 @@ export const projects: Project[] = [
     name: "ArcClot",
     description: "On-chain slot machine delivering instant USDC-based gaming experiences.",
     category: "Gaming",
-    imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop",
+    imageUrl: arcclotImg,
     link: "https://arcclot.vercel.app/",
     twitter: "lynnthelight"
   },
@@ -90,7 +105,7 @@ export const projects: Project[] = [
     name: "AI Voice Vault",
     description: "Voice-controlled DeFi platform leveraging AI for hands-free transactions through natural speech commands. Lablab AI Hackathon submission.",
     category: "Voice Apps",
-    imageUrl: "https://images.unsplash.com/photo-1589254065878-42c9da997008?w=400&h=300&fit=crop",
+    imageUrl: aiVoiceVaultImg,
     link: "https://ai-voice-vault.vercel.app/",
     twitter: "_abdulbasit110"
   },
@@ -99,7 +114,7 @@ export const projects: Project[] = [
     name: "Floe",
     description: "AI-driven voice payment system enabling autonomous transactions and frictionless cross-chain USDC movement through CCTP.",
     category: "Voice Apps",
-    imageUrl: "https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=400&h=300&fit=crop",
+    imageUrl: floeImg,
     link: "https://floe.onrender.com/",
     twitter: "mystic_mti"
   },
@@ -108,7 +123,7 @@ export const projects: Project[] = [
     name: "ArcClient Voice",
     description: "Voice-activated micropayment solution built for seamless small-value transactions.",
     category: "Voice Apps",
-    imageUrl: "https://images.unsplash.com/photo-1616509091215-57bbece93654?w=400&h=300&fit=crop",
+    imageUrl: arcclientVoiceImg,
     link: "https://arcclient.vercel.app/auth",
     twitter: "kraken41_"
   },
@@ -118,7 +133,7 @@ export const projects: Project[] = [
     name: "ArcID",
     description: "Decentralized identity passport with Worldcoin verification and Storacha security.",
     category: "Utility",
-    imageUrl: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=300&fit=crop",
+    imageUrl: arcIdImg,
     link: "https://arc-id.vercel.app/",
     twitter: "DefiPreacherr"
   },
@@ -127,7 +142,7 @@ export const projects: Project[] = [
     name: "Arc Payroll Platform",
     description: "All-in-one Arc toolkit featuring token swaps, smart contract deployment, liquidity management, and more.",
     category: "Utility",
-    imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&h=300&fit=crop",
+    imageUrl: arcPayrollImg,
     link: "https://arc-payroll-platform.vercel.app/",
     twitter: "eyeofquantum"
   },
@@ -136,7 +151,7 @@ export const projects: Project[] = [
     name: "PayArc",
     description: "Transparent on-chain invoicing system for creating and processing payments with full blockchain visibility.",
     category: "Utility",
-    imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop",
+    imageUrl: payarcImg,
     link: "https://payarc.vercel.app/",
     twitter: "Sercan0x"
   }
