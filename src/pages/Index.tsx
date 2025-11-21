@@ -28,7 +28,15 @@ const Index = () => {
       {/* Header */}
       <header className="border-b border-border">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Button variant="ghost" className="gap-2">
+          <Button 
+            variant="ghost" 
+            className="gap-2"
+            onClick={() => {
+              setSelectedCategory("All");
+              setSearchQuery("");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
             <ArrowLeft className="h-4 w-4" />
             Back to Home
           </Button>
