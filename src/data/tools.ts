@@ -16,7 +16,8 @@ export const projects: Project[] = [
     description: "Simple backend authentication solution for Arc ecosystem applications",
     category: "Dapps",
     imageUrl: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=300&fit=crop",
-    link: "https://arc-privy-simple-backend.vercel.app/"
+    link: "https://arc-privy-simple-backend.vercel.app/",
+    twitter: "yoshinokuna"
   },
   {
     id: "rearc",
