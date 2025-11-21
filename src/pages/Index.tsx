@@ -41,9 +41,19 @@ const Index = () => {
             Back to Home
           </Button>
           <div className="flex gap-2">
-            <Button variant="default" className="gap-2">
-              <Plus className="h-4 w-4" />
-              Submit Your Project
+            <Button 
+              variant="default" 
+              className="gap-2"
+              asChild
+            >
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfolPUdfvExlPRVPwb4DfRqMzMdxJcZaJvISxUDikhzND2yFA/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Plus className="h-4 w-4" />
+                Submit Your Project
+              </a>
             </Button>
             <Button variant="outline" className="gap-2">
               <MessageSquare className="h-4 w-4" />
