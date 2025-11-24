@@ -59,7 +59,7 @@ export const projects: Project[] = [
     category: "Dapps",
     imageUrl: arcdexImg,
     link: "https://arcdex.netlify.app/",
-    twitter: "yoshinokuna"
+    twitter: "0xohzsh"
   },
   {
     id: "arcbond",
