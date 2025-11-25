@@ -55,9 +55,19 @@ const Index = () => {
                 Submit Your Project
               </a>
             </Button>
-            <Button variant="outline" className="gap-2">
-              <MessageSquare className="h-4 w-4" />
-              Community Feedback
+            <Button 
+              variant="outline" 
+              className="gap-2"
+              asChild
+            >
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSePAF2n42_SsWM0lPBqe9sfDnBcHwXip9SM5BlqueH5lsQqjg/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MessageSquare className="h-4 w-4" />
+                Community Feedback
+              </a>
             </Button>
           </div>
         </div>
