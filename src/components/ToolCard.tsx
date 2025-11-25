@@ -25,13 +25,13 @@ export const ProjectCard = ({ name, description, category, imageUrl, link, twitt
   return (
     <Card className="overflow-hidden border-border bg-card hover:border-primary/50 transition-all duration-300 h-full flex flex-col">
       <a href={link} target="_blank" rel="noopener noreferrer" className="block group">
-        <div className="aspect-video bg-secondary/50 flex items-center justify-center p-8 relative overflow-hidden">
+        <div className="aspect-video bg-secondary/50 relative overflow-hidden">
           <img 
             src={imageUrl} 
             alt={name} 
-            className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
           />
-          <Badge className={`absolute top-3 left-3 ${getCategoryColor(category)} text-xs font-medium`}>
+          <Badge className={`absolute bottom-3 right-3 ${getCategoryColor(category)} text-xs font-medium`}>
             {category}
           </Badge>
         </div>
