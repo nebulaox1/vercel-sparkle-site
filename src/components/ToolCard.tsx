@@ -43,9 +43,6 @@ export const ProjectCard = ({ name, description, category, imageUrl, link, twitt
       </a>
       {twitter && (
         <div className="px-5 pb-5 flex items-center justify-between mt-auto">
-          <Badge className={`${getCategoryColor(category)} text-xs font-medium`}>
-            {category}
-          </Badge>
           <a 
             href={`https://twitter.com/${twitter}`} 
             target="_blank" 
@@ -55,6 +52,9 @@ export const ProjectCard = ({ name, description, category, imageUrl, link, twitt
             <span>creator :</span>
             <span>@{twitter}</span>
           </a>
+          <Badge className={`${getCategoryColor(category)} text-xs font-medium`}>
+            {category}
+          </Badge>
         </div>
       )}
     </Card>
