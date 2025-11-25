@@ -24,7 +24,7 @@ const getCategoryColor = (category: string) => {
 export const ProjectCard = ({ name, description, category, imageUrl, link, twitter }: ProjectCardProps) => {
   return (
     <Card className="overflow-hidden border-border bg-card hover:border-primary/50 transition-all duration-300 h-full flex flex-col">
-      <a href={link} target="_blank" rel="noopener noreferrer" className="block group">
+      <a href={link} target="_blank" rel="noopener noreferrer" className="block group flex-1 flex flex-col">
         <div className="aspect-video bg-secondary/50 relative overflow-hidden">
           <img 
             src={imageUrl} 
@@ -36,13 +36,13 @@ export const ProjectCard = ({ name, description, category, imageUrl, link, twitt
           <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
             {name}
           </h3>
-          <p className="text-sm text-muted-foreground line-clamp-3">
+          <p className="text-sm text-muted-foreground line-clamp-3 flex-1">
             {description}
           </p>
         </div>
       </a>
       {twitter && (
-        <div className="px-5 pb-5 flex items-center justify-between">
+        <div className="px-5 pb-5 flex items-center justify-between mt-auto">
           <Badge className={`${getCategoryColor(category)} text-xs font-medium`}>
             {category}
           </Badge>
