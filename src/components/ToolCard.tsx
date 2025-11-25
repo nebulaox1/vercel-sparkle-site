@@ -31,9 +31,6 @@ export const ProjectCard = ({ name, description, category, imageUrl, link, twitt
             alt={name} 
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
           />
-          <Badge className={`absolute bottom-3 right-3 ${getCategoryColor(category)} text-xs font-medium`}>
-            {category}
-          </Badge>
         </div>
         <div className="p-5 flex-1 flex flex-col">
           <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
@@ -45,7 +42,10 @@ export const ProjectCard = ({ name, description, category, imageUrl, link, twitt
         </div>
       </a>
       {twitter && (
-        <div className="px-5 pb-5">
+        <div className="px-5 pb-5 flex items-center justify-between">
+          <Badge className={`${getCategoryColor(category)} text-xs font-medium`}>
+            {category}
+          </Badge>
           <a 
             href={`https://twitter.com/${twitter}`} 
             target="_blank" 
